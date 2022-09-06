@@ -212,6 +212,11 @@ body {
 .notes{
   bottom: 0;
   height: 50px;
+  margin-left: 90px;
+}
+
+.v-dialog__content,.notifyAlert{
+  z-index: 20555555556552 !important;
 }
 
 /* responsive */

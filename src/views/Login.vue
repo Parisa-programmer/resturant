@@ -90,7 +90,7 @@ export default {
       if (this.username == "admin" && this.password == "admin") {
         localStorage.setItem('login', true)
         localStorage.setItem('isAddmin', true)
-        this.$router.push('/menu')
+        this.$router.push('/')
       }
       else {
         this.alert = true

@@ -169,7 +169,7 @@
       <v-btn v-if="isAddmin" dark color="#DB0B00" class="my-2 mr-12" @click="dialog = true">
         افزودن فیلد جدید
       </v-btn>
-      <v-row class="mr-12" justify="center">
+      <v-row class="mr-12 mb-12" justify="center">
         <v-col v-for="(item, i) in desserts" :key="i" class="pa-3" cols="12" sm="6" md="4" lg="3" xl="2">
           <v-card class="white rounded-xl mb-6 pa-3">
             <v-row>
@@ -201,7 +201,7 @@
       </v-row>
     </v-col>
     <v-row v-if="!isAddmin && notes.length" class="red darken-4 notes fixed widthAll" justify='center' align="center">
-      <v-btn class="red" dark @click="showNotes">مشاهده یادداشت ها</v-btn>
+      <v-btn class="red " dark @click="showNotes">مشاهده یادداشت ها</v-btn>
     </v-row>
     <v-dialog v-model="noteDialog" width="90%">
       <v-row class="white pa-3">
@@ -303,12 +303,11 @@ export default {
     dialogDelete(val) {
       val || this.closeDelete()
     },
-    subject(type) {
+    subject() {
       this.desserts = []
       this.loadingTabel = true
       setTimeout(() => {
         this.initialize()
-        console.log(type);
         this.loadingTabel = false
       }, 1000);
     },
@@ -512,7 +511,7 @@ export default {
         this.alert = true
         setTimeout(() => {
           this.alert = false
-        }, 2000);
+        }, 20000);
       }
       else {
         this.notes[index].number++
@@ -520,7 +519,7 @@ export default {
         this.alert = true
         setTimeout(() => {
           this.alert = false
-        }, 2000);
+        }, 20000);
       }
 
     },
