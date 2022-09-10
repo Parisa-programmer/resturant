@@ -462,7 +462,7 @@ export default {
             Price: this.editedItem.Price,
             Category: this.subject,
             Image: image,
-            C_OR_R: self.$route.path == '/cofe' ? "c" : "r",
+            C_OR_R: self.$route.path == '/coffeshop' ? "c" : "r",
 
           }
 
