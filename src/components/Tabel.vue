@@ -1,5 +1,5 @@
 <template>
-  <v-data-table v-if="windowWidth > 600 && isAddmin" hide-default-footer :headers="headers" :items="desserts"
+  <v-data-table v-if="windowWidth > 600 && isAddmin" hide-default-footer disable-pagination :headers="headers" :items="desserts"
     sort-by="calories" class="elevation-1 mx-auto my-12 " color="red" :loading='loadingTabel'>
     <template v-slot:top>
       <v-toolbar flat>
