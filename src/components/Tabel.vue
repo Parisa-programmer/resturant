@@ -173,7 +173,7 @@
         <v-col v-for="(item, i) in desserts" :key="i" class="pa-3" cols="12" sm="6" md="4" lg="3" xl="2">
           <v-card class="white rounded-xl mb-6 pa-3">
             <v-row>
-              <v-img width="100" height="300" class="rounded-xl"
+              <v-img width="100" height="200" class="rounded-xl"
                 :src="item.Image ? 'https://ahuan.ir/menu/assets/' + item.Image : 'https://ahuan.ir/menu/assets/349d38da-c904-4145-9d2a-e57475e016c5.jpg'">
               </v-img>
             </v-row>
@@ -443,7 +443,7 @@ export default {
             Price: this.editedItem.Price,
             Category: this.subject,
             Image: image,
-            C_OR_R: self.$route.path == '/cofe' ? "c" : "r"
+            C_OR_R: self.$route.path == '/coffeshop' ? "c" : "r"
           }
 
           axios.put('https://ahuan.ir/api/foods?id=' + this.editedItem.Id, editOption)
@@ -511,7 +511,7 @@ export default {
         this.alert = true
         setTimeout(() => {
           this.alert = false
-        }, 20000);
+        }, 2000);
       }
       else {
         this.notes[index].number++
@@ -519,7 +519,7 @@ export default {
         this.alert = true
         setTimeout(() => {
           this.alert = false
-        }, 20000);
+        }, 2000);
       }
 
     },
