@@ -22,6 +22,7 @@
     </v-app-bar>
     <div id="m6_menu" style="left:0;z-index: 222222;">
       <div class="menu-bar" :style="{maxHeight: isAddmin ? '80%' : '100%'}">
+        <div class="m6_cat" id="menu_1" @click="changeMenu('اقتصادی')"><img src="../assets/Economical .png"><span>اقتصادی</span></div>
         <div class="m6_cat" id="menu_1" @click="changeMenu('پیش غذا')"><img src="../assets/soap.png"><span>پیش
             غذا</span></div>
         <div class="m6_cat" id="menu_2" @click="changeMenu('سالاد')"><img src="../assets/salad.png"><span>سالاد</span>
@@ -78,7 +79,7 @@ export default {
     logout() {
       localStorage.removeItem('login')
       localStorage.removeItem('isAddmin')
-      this.$router.push('/')
+      this.$router.push('/login')
     }
   }
 };

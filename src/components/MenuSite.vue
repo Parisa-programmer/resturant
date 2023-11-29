@@ -60,7 +60,7 @@ export default {
     logout() {
       localStorage.removeItem('login')
       localStorage.removeItem('isAddmin')
-      this.$router.push('/')
+      this.$router.push('/login')
     }
   },
   created() {
