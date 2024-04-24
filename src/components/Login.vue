@@ -3,7 +3,7 @@
     <v-img height="100%" width="100%" class="login-background fixed" src="../assets/login-background.png" />
     <div class="darkDiv justify-center align-center d-flex widthAll heightAll">
       <div class="loginBox pa-4 text-right rounded-lg">
-        <h2 class="loginTitle d-inline-block">پنل ورود مدیریت</h2>
+        <h2 class="loginTitle d-inline-block" style="color:#14179e">پنل ورود مدیریت</h2>
         <!-- <i class="loginIcon material-icons">login</i> -->
         <div>
           <label class="loginLabel" for="">نام کاربری:</label>

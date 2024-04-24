@@ -1,45 +1,45 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Login from '../views/Login.vue'
-import Resturant from '../views/Resturant.vue'
-import ChooseType from '../views/ChooseType.vue'
-import Cofe from '../views/Cofe'
-
-
 
 Vue.use(VueRouter)
 
+
+
 const routes = [
+
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    name: 'home',
+    component: () => import('../views/HomeView.vue')
+  },
+  {
+    path: '/resturant',
+    name: 'resturant',
+    component: () => import('../views/Resturant.vue')
+  },
+  {
+    path: '/coffeshop',
+    name: 'coffeshop',
+    component: () => import('../views/Cofe.vue')
   },
   {
     path: '/menu/Login',
-    name: 'Login',
-    component: Login
+    name: 'Login-page',
+    component: () => import('../views/Login.vue')
   },
   {
-    path: '/menu/resturant',
-    name: 'Resturant',
-    component: Resturant
+    path: '/test-page',
+    name: 'test-page',
+    component: () => import('../views/TestPage.vue')
   },
   {
-    path: '/menu',
-    name: 'ChooseType',
-    component: ChooseType
-  },
-  {
-    path: '/menu/coffeshop',
-    name: 'Cofe',
-    component: Cofe
+    path: '*',
+    name: 'not-found',
+    component: () => import('../views/NotFound.vue')
   },
 ]
 
 const router = new VueRouter({
-  mode: 'history',
   base: process.env.BASE_URL,
   routes
 })

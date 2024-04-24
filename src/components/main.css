@@ -1,18 +1,30 @@
 
+
 @font-face {
-  font-family: at10;
-  src: url("../assets/font/at10.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("../assets/font/at10.woff2") format("woff2"),
-    /* Super Modern Browsers */ url("../assets/font/at10.woff") format("woff"),
-    /* Pretty Modern Browsers */ url("../assets/font/at10.ttf")
-      format("truetype"),
-    /* Safari, Android, iOS */ url("../assets/font/at10.svg#svgFontName")
-      format("svg"); /* Legacy iOS */
+  font-family: pelak;
+  src: url("../assets/fonts/PELAK/Farsi_Numeral/ttf/PelakFA-Medium.ttf");
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: rokh;
+  src: url("../assets/fonts/Rokh_Pro/WebFonts/woff/Rokh-Bold.woff");
+  font-style: normal;
+  font-weight: 300;
+}
+
+.pelak{
+  font-family: pelak !important;
+}
+
+.rokh{
+  font-family: rokh !important;
 }
 
 *,
 .v-application .title {
-  font-family: "at10" !important;
+  font-family: "pelak" !important;
   letter-spacing: 0 !important;
 }
 
@@ -114,7 +126,7 @@ body {
 }
 
 .mainDiv .v-data-table thead {
-  background-color: #9e0b0f !important;
+  background-color: #14179e !important;
 }
 
 .mainDiv .v-data-table thead th {
@@ -123,7 +135,7 @@ body {
 }
 
 .mainDiv .v-data-table tbody tr:hover {
-  background-color: #fff3f3 !important;
+  background-color: #e6fffe !important;
 }
 
 .mainDiv .v-data-table .v-data-table__wrapper::-webkit-scrollbar {

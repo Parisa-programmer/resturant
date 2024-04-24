@@ -4,7 +4,7 @@
       src="../assets/login-background.png" />
     <div class="darkDiv justify-center align-center d-flex widthAll heightAll">
       <div class="loginBox pa-4 text-right rounded-lg">
-        <h2 class="loginTitle d-inline-block red--text text--darken-2">پنل ورود مدیریت</h2>
+        <h2 class="loginTitle d-inline-block rokh" style="color:#14179e">پنل ورود مدیریت</h2>
         <div>
           <v-text-field v-model="username" outlined label="نام کاربری"></v-text-field>
         </div>
@@ -12,12 +12,12 @@
           <v-text-field v-model="password" outlined label="رمز عبور"></v-text-field>
         </div>
         <span class="red--text text--darken-1" v-if="alert">{{alertText}}</span>
-        <v-btn id="login" dark class="red darken-2 mdc-button mdc-button--raised float-left loginButton w-100">
-          <span class="mdc-button__label px-6" @click="login">ورود</span>
+        <v-btn dark class="float-left px-6" color="#14179e" @click="login" >
+          ورود
         </v-btn>
       </div>
     </div>
-    <AlertText v-if="alert" :text='alertText' />
+    <AlertText v-if="alert" :text='alertText'  />
   </div>
 
 </template>
@@ -72,6 +72,7 @@
 </style>
 
 <script>
+import "../components/main.css";
 import AlertText from "../components/AlertText.vue";
 export default {
   name: "Login",
@@ -90,7 +91,7 @@ export default {
       if (this.username == "admin" && this.password == "admin") {
         localStorage.setItem('login', true)
         localStorage.setItem('isAddmin', true)
-        this.$router.push('/menu')
+        this.$router.push('/')
       }
       else {
         this.alert = true

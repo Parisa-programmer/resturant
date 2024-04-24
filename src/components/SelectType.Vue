@@ -29,20 +29,20 @@ export default {
 
 <style>
 body {
-  background-color: #9e0b0f;
-  font-family: at10;
+  background-color: #14179e;
+  font-family: pelak;
 }
 
 #m6_menu {
-  background-color: #9e0b0f;
+  background-color: #14179e;
 }
 
 .m6_main_cat {
-  background-color: #9e0b0f;
+  background-color: #14179e;
 }
 
 .m6_cat_checked {
-  background-color: #9e0b0f;
+  background-color: #14179e;
 }
 
 .m6_main_cat {
@@ -54,32 +54,32 @@ body {
 }
 
 #rest_info>* i {
-  background-color: #9e0b0f;
+  background-color: #14179e;
 }
 
 .m6_food>div:nth-child(2) span {
-  background-color: #9e0b0f;
+  background-color: #14179e;
   color: #ffffff;
 }
 
 #note_button {
-  background-color: #9e0b0f;
+  background-color: #14179e;
   color: #ffffff;
 }
 
 #reserve_button>* {
-  background-color: #9e0b0f;
+  background-color: #14179e;
   color: #ffffff;
 }
 
 #option_add_note {
-  background-color: #9e0b0f;
+  background-color: #14179e;
   color: #ffffff;
 }
 
 .m6_main_cat img {
-  height: 125px;
-  margin-left: 0px;
+  height: 125px  !important;
+  margin-left: 0px !important;
 }
 
 .m6_main_cat>span {
@@ -95,21 +95,21 @@ body {
 }
 
 #t6_logo img {
-  width: 50%;
+  width: 50% !important;
   padding: 18px 0px 15px 0px;
 }
 
 #m6_menu {
-  background-color: #ff0101;
+  background-color: #14179e;
 }
 
 .m6_cat_checked {
-  background-color: #9e0b0f;
+  background-color: #14179e;
 }
 
 .m6_food>div:nth-child(1)>div:nth-child(2)>div:nth-child(1) {
   text-align: right;
-  font-family: at10;
+  font-family: pelak;
 }
 
 .m6_food {
@@ -118,7 +118,7 @@ body {
 }
 
 .food_label {
-  background-color: #FF0101;
+  background-color: #14179e;
   color: #ffffff;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .m6_cat_checked {
-  background-color: #9e0b0f;
+  background-color: #14179e;
 }
 
 #m6_main_menu>div {

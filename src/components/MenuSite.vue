@@ -52,13 +52,13 @@ export default {
 
 <style>
 body {
-  font-family: at10;
+  font-family: pelak;
   direction: rtl;
-  background-color: #ff0101;
+  background-color: #deb887;
 }
 
 #m6_menu {
-  background-color: #ff0101;
+  background-color: #deb887;
 }
 
 .m6_cat {
@@ -80,7 +80,7 @@ a {
 a:active,
 a:focus,
 a:hover {
-  color: #DB0B00;
+  color: #deb887;
   outline-width: 0;
   text-decoration: none;
   cursor: pointer;
