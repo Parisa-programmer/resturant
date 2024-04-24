@@ -27,11 +27,11 @@ const routes = [
     name: 'Login-page',
     component: () => import('../views/Login.vue')
   },
-  {
-    path: '/test-page',
-    name: 'test-page',
-    component: () => import('../views/TestPage.vue')
-  },
+  // {
+  //   path: '/test-page',
+  //   name: 'test-page',
+  //   component: () => import('../views/TestPage.vue')
+  // },
   {
     path: '*',
     name: 'not-found',
